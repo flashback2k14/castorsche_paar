@@ -3,14 +3,14 @@ package cp;
 public class CastorschePaar {
 	
 	/**
-	 * c: NÂ² --> N bijektiv: c(x,y) = Â½ (x+y-1) (x+y-2) + x
+	 * c: N² --> N bijektiv: c(x,y) = ½ (x+y-1) (x+y-2) + x
 	 */
 	private double c (int x, int y) {
 		return ((x + y - 1) * (x + y - 2)) / 2 + x;
 	}
 	
 	/**
-	 * c: N0Â² --> N bijektiv: z= c(x,y) = Â½ (x+y+1) (x+y) + x
+	 * c: N0² --> N bijektiv: z= c(x,y) = ½ (x+y+1) (x+y) + x
 	 */
 	public double z (int x, int y) {
 		return ((x + y + 1) * (x + y)) / 2 + x;
@@ -20,7 +20,7 @@ public class CastorschePaar {
 	 * INVERSE
 	 */
 	/**
-	 * x = e (z) = z âˆ’ invZ(z)
+	 * x = e (z) = z - invZ(z)
 	 */
 	public double e (int z) {
 		return (z - inverseZ(z));
@@ -34,7 +34,7 @@ public class CastorschePaar {
 	}
 	
 	/**
-	 * n(z) = Floor[âˆ’0,5 + SQRT(0,25 + 2 * z)]
+	 * n(z) = Floor[-0,5 + SQRT(0,25 + 2 * z)]
 	 */
 	public double n (int z) {
 		return Math.floor(-0.5 + (Math.sqrt((0.25 + 2 * z))));
