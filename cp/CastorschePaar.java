@@ -39,6 +39,7 @@ public class CastorschePaar {
 	public double n (int z) {
 		return Math.floor(-0.5 + (Math.sqrt((0.25 + 2 * z))));
 	}
+	
 	/**
 	 * invZ(z) = 0,5 * n(z) * (n(z) + 1)
 	 */
